@@ -4,9 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Luiz Gustavo/Documents/code/AndroidFundamentals/app/src/main/res/layout/activity_constraint_layout.xml" value="0.25" />
+        <entry key="..\:/Users/Luiz Gustavo/Documents/code/AndroidFundamentals/app/src/main/res/layout/activity_edit_text.xml" value="0.25" />
+        <entry key="..\:/Users/Luiz Gustavo/Documents/code/AndroidFundamentals/app/src/main/res/layout/activity_edit_text_view.xml" value="0.25" />
+        <entry key="..\:/Users/Luiz Gustavo/Documents/code/AndroidFundamentals/app/src/main/res/layout/activity_edit_view.xml" value="0.25" />
+        <entry key="..\:/Users/Luiz Gustavo/Documents/code/AndroidFundamentals/app/src/main/res/layout/activity_image_view.xml" value="0.25" />
         <entry key="..\:/Users/Luiz Gustavo/Documents/code/AndroidFundamentals/app/src/main/res/layout/activity_linear_layout.xml" value="0.25" />
         <entry key="..\:/Users/Luiz Gustavo/Documents/code/AndroidFundamentals/app/src/main/res/layout/activity_linear_layout2.xml" value="0.1" />
         <entry key="..\:/Users/Luiz Gustavo/Documents/code/AndroidFundamentals/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Luiz Gustavo/Documents/code/AndroidFundamentals/app/src/main/res/layout/activity_text_view.xml" value="0.25" />
       </map>
     </option>
   </component>
