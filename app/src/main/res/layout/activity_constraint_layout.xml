@@ -46,27 +46,37 @@
         app:layout_constraintTop_toBottomOf="@+id/etFirstName" />
 
     <EditText
-        android:id="@+id/etBirthDate"
+        android:id="@+id/etAge"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Birth Date"
-        android:inputType="text"
+        android:hint="Age"
+        android:inputType="number"
         android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/btnSubmit"
+        app:layout_constraintEnd_toStartOf="@+id/btnLog"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etCountry" />
 
     <Button
-        android:id="@+id/btnSubmit"
+        android:id="@+id/btnLog"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Submit"
+        android:text="Log"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/etBirthDate"
+        app:layout_constraintBottom_toBottomOf="@+id/etAge"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/etBirthDate"
-        app:layout_constraintTop_toTopOf="@+id/etBirthDate" />
+        app:layout_constraintStart_toEndOf="@+id/etAge"
+        app:layout_constraintTop_toTopOf="@+id/etAge" />
+
+    <Button
+        android:id="@+id/btnPassData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="PassingData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAge" />
 </androidx.constraintlayout.widget.ConstraintLayout>

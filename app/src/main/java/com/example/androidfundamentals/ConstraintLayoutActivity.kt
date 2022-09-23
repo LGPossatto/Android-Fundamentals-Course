@@ -1,5 +1,6 @@
 package com.example.androidfundamentals
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -14,13 +15,33 @@ class ConstraintLayoutActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         //val btnSubmit = findViewById<Button>(R.id.btnSubmit)
-        binding.btnSubmit.setOnClickListener {
-            val firstName = binding.etFirstName.text
-            val lastName = binding.edLastName.text
-            val country = binding.etCountry.text
-            val birthDate = binding.etBirthDate.text
+        binding.btnLog.setOnClickListener {
+            val firstName = binding.etFirstName.text.toString()
+            val lastName = binding.edLastName.text.toString()
+            val country = binding.etCountry.text.toString()
+            val age = binding.etAge.text.toString().toInt()
 
-            Log.d("ConstraintLayout", "$firstName' $lastName, from $country, was born at $birthDate")
+            Log.d("ConstraintLayout", "$firstName' $lastName, from $country, was born at $age")
+        }
+
+
+        binding.btnPassData.setOnClickListener {
+            val firstName = binding.etFirstName.text.toString()
+            val lastName = binding.edLastName.text.toString()
+            val country = binding.etCountry.text.toString()
+            val age = binding.etAge.text.toString().toInt()
+
+            val person = Person("$firstName $lastName", age, country)
+
+            Intent(this, PassingDataActivity::class.java).also {
+                it.putExtra("EXTRA_NAME", "$firstName $lastName")
+                it.putExtra("EXTRA_COUNTRY", country)
+                it.putExtra("EXTRA_AGE", age.toString().toInt())
+
+                it.putExtra("EXTRA_PERSON", person)
+
+                startActivity(it)
+            }
         }
     }
 }

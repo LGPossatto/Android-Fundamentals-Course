@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckboxRadioButtonActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Choose your items:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rgMeat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/tvTitle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle">
+
+        <RadioButton
+            android:id="@+id/rbBeef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beef"
+            android:checked="true"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbChicken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chicken"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbPork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pork"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cbCheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cheese"
+        app:layout_constraintStart_toStartOf="@+id/rgMeat"
+        app:layout_constraintTop_toBottomOf="@+id/rgMeat" />
+
+    <CheckBox
+        android:id="@+id/cbOnions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Onions"
+        app:layout_constraintStart_toStartOf="@+id/cbSalad"
+        app:layout_constraintTop_toBottomOf="@+id/cbSalad" />
+
+    <CheckBox
+        android:id="@+id/cbSalad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salad"
+        app:layout_constraintStart_toStartOf="@+id/cbCheese"
+        app:layout_constraintTop_toBottomOf="@+id/cbCheese" />
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        app:layout_constraintStart_toStartOf="@+id/cbOnions"
+        app:layout_constraintTop_toBottomOf="@+id/cbOnions" />
+
+    <TextView
+        android:id="@+id/tvOrder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@+id/btnConfirm" />
+</androidx.constraintlayout.widget.ConstraintLayout>

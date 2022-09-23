@@ -49,6 +49,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:backgroundTint="#2196F3"
         android:ellipsize="end"
         android:maxLines="1"
@@ -57,8 +58,66 @@
         android:textSize="16sp"
         android:textStyle="bold"
         app:cornerRadius="4sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnCheckboxRadioButton"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnTextView" />
+
+    <Button
+        android:id="@+id/btnToast"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#2196F3"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Toast"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="4sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnCustomToast"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnImageView" />
+
+    <Button
+        android:id="@+id/btnPassingData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#2196F3"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="PassingData"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="4sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnCustomToast"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnToast" />
+
+    <Button
+        android:id="@+id/btnCustomToast"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="CustomToast"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="4sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnToast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnToast"
+        app:layout_constraintTop_toTopOf="@+id/btnToast" />
 
     <Button
         android:id="@+id/btnEditText"
@@ -78,6 +137,25 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnTextView"
         app:layout_constraintTop_toBottomOf="@+id/btnConstraintLayout" />
+
+    <Button
+        android:id="@+id/btnCheckboxRadioButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#2196F3"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="EditText"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="4sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnImageView"
+        app:layout_constraintTop_toBottomOf="@+id/btnEditText" />
 
     <Button
         android:id="@+id/btnLinearLayout"
