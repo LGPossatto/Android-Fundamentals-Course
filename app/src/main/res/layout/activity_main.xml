@@ -96,8 +96,8 @@
         android:textSize="16sp"
         android:textStyle="bold"
         app:cornerRadius="4sp"
-        app:layout_constraintEnd_toStartOf="@+id/btnCustomToast"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintEnd_toStartOf="@+id/btnPermissions"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnToast" />
 
@@ -118,6 +118,24 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnToast"
         app:layout_constraintTop_toTopOf="@+id/btnToast" />
+
+    <Button
+        android:id="@+id/btnPermissions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Permissions"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="4sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPassingData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnPassingData"
+        app:layout_constraintTop_toTopOf="@+id/btnPassingData" />
 
     <Button
         android:id="@+id/btnEditText"

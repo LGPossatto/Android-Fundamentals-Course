@@ -63,5 +63,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, ConstraintLayoutActivity::class.java)
             startActivity(intent)
         }
+
+        binding.btnPermissions.setOnClickListener {
+            val intent = Intent(this, PermissionsActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
