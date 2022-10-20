@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:id="@+id/clMainActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -102,6 +108,78 @@
         app:layout_constraintTop_toBottomOf="@+id/btnToast" />
 
     <Button
+        android:id="@+id/btnImplicitIntents"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#2196F3"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="ImplicitIntents"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="4sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnPassingData"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPassingData" />
+
+    <Button
+        android:id="@+id/btnAlertDialog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#2196F3"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="AlertDialog"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="4sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnPassingData"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnImplicitIntents" />
+
+    <Button
+        android:id="@+id/btnFragments"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#2196F3"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Fragments"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="4sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnPassingData"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlertDialog" />
+
+    <Button
+        android:id="@+id/btnNotification"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#2196F3"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Notification"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="4sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnPassingData"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFragments" />
+
+    <Button
         android:id="@+id/btnCustomToast"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -131,10 +209,79 @@
         android:textSize="16sp"
         android:textStyle="bold"
         app:cornerRadius="4sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnImplicitIntents"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnCustomToast"
+        app:layout_constraintTop_toTopOf="@+id/btnImplicitIntents" />
+
+    <Button
+        android:id="@+id/btnSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Spinenr"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="4sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnCustomToast"
+        app:layout_constraintTop_toTopOf="@+id/btnAlertDialog" />
+
+    <Button
+        android:id="@+id/btnSaveData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="SaveData"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="4sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnCustomToast"
+        app:layout_constraintTop_toTopOf="@+id/btnFragments" />
+
+    <Button
+        android:id="@+id/btnDragDrop"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="DragDrop"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="4sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnCustomToast"
+        app:layout_constraintTop_toTopOf="@+id/btnNotification" />
+
+    <Button
+        android:id="@+id/btnToolBarMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="ToolBarMenu"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="4sp"
         app:layout_constraintBottom_toBottomOf="@+id/btnPassingData"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnPassingData"
+        app:layout_constraintStart_toStartOf="@+id/btnCustomToast"
         app:layout_constraintTop_toTopOf="@+id/btnPassingData" />
 
     <Button
@@ -213,3 +360,5 @@
         app:layout_constraintTop_toBottomOf="@+id/tvGoText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
